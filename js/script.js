@@ -25,7 +25,7 @@ function loadData() {
     
 var nytimesURL = "https://api.nytimes.com/svc/books/v3/lists/best-sellers/history.json";
 nytimesURL += '?' + $.param({
-  'api-key': Mykey,
+  'api-key': Mykey, //Enter the correct key
   'author': typestr
 });
 $.getJSON(nytimesURL,function(data){
